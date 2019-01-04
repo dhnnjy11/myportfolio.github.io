@@ -12,11 +12,6 @@ h3.tertiary-heading {
 .list-details {
   text-align: justify; }
 
-/*
-	Prologue by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -1027,6 +1022,15 @@ ul.icons {
     text-align: center;
     border: 0; }
 
+ul.contact-icons {
+  text-align: left;
+  text-decoration: none;
+  list-style: none; }
+  ul.contact-icons li {
+    padding: 20px; }
+    ul.contact-icons li a .text {
+      padding-left: 15px; }
+
 /* Form */
 form label {
   display: block;
@@ -1373,14 +1377,6 @@ button,
   /* Icons */
   ul.icons li a {
     width: 1.75em; }
-  ul.contact-icons {
-    text-align: left;
-    text-decoration: none;
-    list-style: none; }
-    ul.contact-icons li {
-      padding: 20px; }
-      ul.contact-icons li a .text {
-        padding-left: 15px; }
   /* Item */
   .item {
     margin-bottom: 20px; }
@@ -1577,3 +1573,13 @@ button,
     margin: 1em 0 0 0; }
     #footer .copyright li:first-child {
       margin-top: 0; } }
+
+[code]
+.fa-facebook-square {
+  color: #3b5998; }
+
+.fa-linkedin-square {
+  color: #1985bc; }
+
+.fa-twitter-square {
+  color: #1da1f2; }
