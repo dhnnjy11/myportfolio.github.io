@@ -189,7 +189,7 @@
 		outline: 0;
 
 		&:hover {
-			color: #E27689;
+			color: $color-primary;
 			border-bottom-color: rgba(255, 255, 255, 0);
 		}
 	}
@@ -386,6 +386,18 @@
 		}
 	}
 
+	ul.contact-icons {
+		text-align:left;
+		text-decoration: none;
+		list-style: none;
+		li{
+			padding:20px;
+			a .text{
+				padding-left:15px;
+			}
+		}
+	}
+
 /* Form */
 
 	form {
@@ -415,7 +427,7 @@
 			@include vendor('transition', 'all 0.35s ease-in-out');
 
 			&:focus {
-				box-shadow: 0 0 2px 1px #8ebebc;
+				box-shadow: 0 0 2px 1px $color-secondry;
 				background: #fff;
 			}
 		}
@@ -496,22 +508,22 @@
 	.button {
 		position: relative;
 		display: inline-block;
-		border-radius: 0.1em;
+		border-radius: 0.5em;
 		color: #fff !important;
 		text-decoration: none;
 		padding: 0.75em 2.5em 0.75em 2.5em;
-		background-color: #8ebebc;
+		background-color: $color-secondry;
 		border: 0;
 		cursor: pointer;
 		@include vendor('background-image', ('linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15))', 'url("images/overlay.png")'));
 		@include vendor('transition', 'background-color 0.35s ease-in-out');
 
 		&:hover {
-			background-color: #9ececc;
+			background-color:$color-secondry-light;
 		}
 
 		&:active {
-			background-color: #7eaeac;
+			background-color:$color-secondry-light;
 		}
 	}
 
@@ -544,6 +556,7 @@
 
 	.icon {
 		text-decoration: none;
+		border:none;
 
 		&:before {
 			display: inline-block;
@@ -570,7 +583,7 @@
 		@include vendor('display', 'flex');
 		@include vendor('flex-direction', 'column');
 		@include vendor('justify-content', 'space-between');
-		background: #222629 url('images/overlay.png');
+		background: $color-secondry url('images/overlay.png');
 		box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.1);
 		color: #fff;
 		height: 100%;
@@ -678,7 +691,7 @@
 						color: #fff;
 
 						span:before {
-							color: #e27689;
+							color: $color-primary;
 						}
 					}
 				}
@@ -760,7 +773,8 @@
 
 			&.one {
 				background-color: #81918E;
-				background-image: url('../../images/banner.jpg');
+				//background-image: url('../../images/banner.jpg');
+				background-image: linear-gradient(rgba($color-primary, .95), rgba($color-primary-dark, .95)), url('../../images/hero.jpg');
 				height:100vh;
 			}
 
@@ -821,7 +835,7 @@
 
 				section {
 					&.cover {
-						padding: 5em 0;
+						padding: 7em 0 5em 0;
 					}
 				}
 			}
@@ -852,17 +866,7 @@
 				}
 			}
 
-			ul.contact-icons {
-				text-align:left;
-				text-decoration: none;
-				list-style: none;
-				li{
-					padding:20px;
-					a .text{
-						padding-left:15px;
-					}
-				}
-			}
+			
 
 		/* Item */
 
