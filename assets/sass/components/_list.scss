@@ -2,3 +2,30 @@
     text-align: justify;
     font-size:0.9em;
 }
+.tech{
+    text-align: left;
+    &__header{
+        font-weight: 400;
+    }
+    &__tag {
+        padding: .5em;
+        margin:10px 5px;;
+        color: #fff;
+        background-color: $color-secondry-light;        
+        font-size: 0.8em;
+
+        @include breakpoint('<=narrower') {                   
+            font-size: 0.6em;
+        }
+        @include breakpoint('<=mobile') {                   
+            font-size: 0.6em;     
+    
+        }
+      
+    }
+    
+
+   
+}
+
+
